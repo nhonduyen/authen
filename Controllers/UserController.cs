@@ -16,9 +16,10 @@ namespace authen.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize]
+    //[Authorize]
     public class UserController : ControllerBase
     {
+
         private readonly IConfiguration _configuration;
         public UserController(IConfiguration config)
         {
